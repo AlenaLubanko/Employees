@@ -5,7 +5,7 @@ const employeeSchema = mongoose.Schema({
   isArchive: Boolean,
   role: String,
   phone: String,
-  birthday: String,
+  birthday: Date,
 })
 
  export default mongoose.model('employees', employeeSchema);

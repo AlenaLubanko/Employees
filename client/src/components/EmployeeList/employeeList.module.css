@@ -3,3 +3,49 @@
   margin: 0 auto;
   margin-top: 1%;
 }
+
+.note {
+  color: #0f4c75;
+}
+
+.wrapper h1 {
+  color: #3282b8;
+  margin-left: 1%;
+}
+
+.wrapper h3 {
+  margin-left: 1%;
+}
+
+.updateEmployee:hover {
+  color: #f85f73;
+}
+
+.note2 {
+  color: #1b262c;
+}
+
+.divTitle {
+  display: flex;
+  text-align: center;
+}
+
+.divTitle:hover {
+  color: #1b262c;
+}
+
+.childImg img {
+  height: 20px;
+}
+
+.childImg {
+  margin-top: 1%;
+}
+
+.childDate {
+  margin-left: 25%;
+}
+
+.filter:hover {
+  color: #1b262c;
+}

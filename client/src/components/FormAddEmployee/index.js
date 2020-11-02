@@ -47,7 +47,7 @@ function TextMaskCustom(props) {
       ref={(ref) => {
         inputRef(ref ? ref.inputElement : null);
       }}
-      mask={['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, '-', /\d/, /\d/]}
+      mask={['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
       placeholderChar={'\u2000'}
       showMask
     />
@@ -79,8 +79,13 @@ function FormAddEmployee() {
     console.log(inputs);
   }
 
+  const [values, setValues] = React.useState({
+    phone: '(950)123-4567',
+  });
+
   async function handleSubmit(event) {
     event.preventDefault();
+    console.log(values);
     const response = await fetch('/employees/newemployee', {
       method: 'POST',
       headers: {
@@ -89,18 +94,9 @@ function FormAddEmployee() {
       body: JSON.stringify(inputs)
     });
     if (response.status === 200) {
-      dispatch({
-        type: 'AUTHENTICATED_SUCCESSFULLY'
-      });
       return history.push('/');
     }
-    // return setError('Повторите вход')
   }
-
-  const [values, setValues] = React.useState({
-    phone: '(950)123-4567',
-    
-  });
 
   const handleChange = (event) => {
     setValues({
@@ -124,21 +120,30 @@ function FormAddEmployee() {
       <div className={styles.signUp}>
         <div className={styles.childDiv}>
           <form action='/users/signup' method="POST" id='regForm' className={classes.root} noValidate autoComplete="off">
+          <label>Фамилия и имя</label>
             <StyledTextField required id="outlined-basic" placeholder='name' type='text' name='name' onChange={changeInputs} />
             <br />
-            <StyledTextField required id="outlined-basic" placeholder='role' type='text' name='role' onChange={changeInputs} />
+            <label>Должность</label>
+            <select name="role" onChange={(e) => changeInputs(e)}>
+              <option>Выберите должность</option>
+              <option name="role" value="cook">cook</option>
+              <option name="role" value="driver">driver</option>
+              <option name="role" value="waiter">waiter</option>
+            </select>
             <br />
+            <label>Номер телефона</label>
             <Input
               value={values.textmask}
-              onChange={handleChange}
+              onChange={changeInputs}
               name="phone"
               id="formatted-text-mask-input"
               inputComponent={TextMaskCustom}
             />
             {/* <StyledTextField required id="outlined-basic"  name='phone' onChange={changeInputs} /> */}
             <br />
+            <label>Дата рождения</label>
             <StyledTextField required id="outlined-basic" placeholder='birthday' type='date' name='birthday' onChange={changeInputs} />
-            
+
             <br />
           </form>
           <form className={classes.root} noValidate autoComplete="off">

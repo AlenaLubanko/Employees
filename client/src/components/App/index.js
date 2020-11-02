@@ -4,6 +4,7 @@ import {
 } from 'react-router-dom';
 import MainPage from '../MainPage';
 import FormAddEmployee from '../FormAddEmployee';
+import FormUpdateEmployee from '../FormUpdateEmployee';
 import Contacts from '../Contacts';
 import Header from '../Header';
 
@@ -15,8 +16,11 @@ function App() {
         <Route exact path="/">
           <MainPage />
         </Route>
-        <Route exact path="/empoyees/newemployee">
+        <Route exact path="/employees/newemployee">
           <FormAddEmployee />
+        </Route>
+        <Route exact path="/employees/employee/:idEmployee">
+          <FormUpdateEmployee />
         </Route>
         <Route exact path="/contacts">
           <Contacts />

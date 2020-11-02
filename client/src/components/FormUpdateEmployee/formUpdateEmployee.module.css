@@ -1,0 +1,36 @@
+.signUp {
+  display: flex;
+  padding: 20px;
+}
+
+.childDiv {
+  /* margin-left: 35%; */
+  display: flex;
+}
+
+.wrapper {
+  background-color: #bbe1fa;
+  margin-top: 2%;
+  line-height: 1.7;
+  min-height: 350px;
+}
+
+.wrapper h1 {
+  margin-left: 2%;
+}
+
+.wrapper p {
+  margin-left: 2%;
+}
+
+.wrapperTitle {
+  background-color: #3282b8;
+}
+
+.inputUpdate {
+  width: 300px;
+}
+
+.dateDiv {
+  margin-left: 20px;
+}

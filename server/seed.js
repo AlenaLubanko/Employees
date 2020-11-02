@@ -15,7 +15,7 @@ async function createEmployees() {
       "isArchive": false,
       "role": "driver",
       "phone": "+7 (883) 508-3269",
-      "birthday": "12.02.1982"
+      "birthday": "1982-02-12T00:00:00.000Z"
     })
     const emp2 = await new employeeModel(
     {
@@ -23,7 +23,7 @@ async function createEmployees() {
       "isArchive": true,
       "role": "waiter",
       "phone": "+7 (823) 440-3602",
-      "birthday": "26.01.1986"
+      "birthday": "1986-01-26T00:00:00.000Z"
     })
     const emp3 = await new employeeModel(
     {
@@ -31,7 +31,7 @@ async function createEmployees() {
       "isArchive": false,
       "role": "driver",
       "phone": "+7 (971) 575-2645",
-      "birthday": "29.11.1990"
+      "birthday": "1990-11-29T00:00:00.000Z"
     })
     const emp4 = await new employeeModel(
     {
@@ -39,7 +39,7 @@ async function createEmployees() {
       "isArchive": true,
       "role": "waiter",
       "phone": "+7 (945) 447-2286",
-      "birthday": "06.01.1987"
+      "birthday": "1987-01-06T00:00:00.000Z"
     })
     const emp5 = await new employeeModel(
     {
@@ -47,7 +47,7 @@ async function createEmployees() {
       "isArchive": false,
       "role": "cook",
       "phone": "+7 (948) 523-2964",
-      "birthday": "26.01.1982"
+      "birthday": "1982-01-26T00:00:00.000Z"
     })
     const emp6 = await new employeeModel(
     {
@@ -55,7 +55,7 @@ async function createEmployees() {
       "isArchive": true,
       "role": "cook",
       "phone": "+7 (929) 592-3637",
-      "birthday": "25.02.1972"
+      "birthday": "1972-02-25T00:00:00.000Z"
     })
     const emp7 = await new employeeModel(
     {
@@ -63,7 +63,7 @@ async function createEmployees() {
       "isArchive": false,
       "role": "driver",
       "phone": "+7 (872) 568-2916",
-      "birthday": "31.05.1979"
+      "birthday": "1979-05-31T00:00:00.000Z"
     })
     const emp8 = await new employeeModel(
     {
@@ -71,7 +71,7 @@ async function createEmployees() {
       "isArchive": false,
       "role": "driver",
       "phone": "+7 (977) 521-3479",
-      "birthday": "11.09.1981"
+      "birthday": "1981-09-11T00:00:00.000Z"
     })
     const emp9 = await new employeeModel(
     {
@@ -79,7 +79,7 @@ async function createEmployees() {
       "isArchive": true,
       "role": "driver",
       "phone": "+7 (868) 569-3159",
-      "birthday": "07.06.1988"
+      "birthday": "1988-06-07T00:00:00.000Z"
     })
     const emp10 = await new employeeModel(
     {
@@ -88,7 +88,7 @@ async function createEmployees() {
       "isArchive": true,
       "role": "driver",
       "phone": "+7 (808) 592-2480",
-      "birthday": "20.06.1978"
+      "birthday": "1978-06-20T00:00:00.000Z"
     })
     const emp11 = await new employeeModel(
     {
@@ -96,7 +96,7 @@ async function createEmployees() {
       "isArchive": false,
       "role": "cook",
       "phone": "+7 (899) 403-2387",
-      "birthday": "20.01.1987"
+      "birthday": "1987-01-20T00:00:00.000Z"
     })
     const emp12 = await new employeeModel(
     {
@@ -104,7 +104,7 @@ async function createEmployees() {
       "isArchive": true,
       "role": "waiter",
       "phone": "+7 (933) 582-2673",
-      "birthday": "25.05.1987"
+      "birthday": "1987-05-25T00:00:00.000Z"
     })
     const emp13 = await new employeeModel(
     {
@@ -112,7 +112,7 @@ async function createEmployees() {
       "isArchive": true,
       "role": "waiter",
       "phone": "+7 (951) 517-3787",
-      "birthday": "16.12.1972"
+      "birthday": "1972-11-16T00:00:00.000Z"
     })
     const emp14 = await new employeeModel(
     {
@@ -120,7 +120,7 @@ async function createEmployees() {
       "isArchive": true,
       "role": "cook",
       "phone": "+7 (807) 492-3627",
-      "birthday": "17.04.1986"
+      "birthday": "1986-04-17T00:00:00.000Z"
     })
     const emp15 = await new employeeModel(
     {
@@ -128,7 +128,7 @@ async function createEmployees() {
       "isArchive": true,
       "role": "waiter",
       "phone": "+7 (927) 488-2568",
-      "birthday": "24.03.1982"
+      "birthday": "1982-03-24T00:00:00.000Z"
     })
     const emp16 = await new employeeModel(
     {
@@ -136,7 +136,7 @@ async function createEmployees() {
       "isArchive": true,
       "role": "cook",
       "phone": "+7 (875) 517-3873",
-      "birthday": "07.06.1983"
+      "birthday": "1983-06-07T00:00:00.000Z"
     })
     const emp17 = await new employeeModel(
     {
@@ -144,7 +144,7 @@ async function createEmployees() {
       "isArchive": false,
       "role": "waiter",
       "phone": "+7 (877) 450-3253",
-      "birthday": "03.12.1994"
+      "birthday": "1994-12-03T00:00:00.000Z"
     })
 
 

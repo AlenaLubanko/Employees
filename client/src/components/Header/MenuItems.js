@@ -6,7 +6,7 @@ export const MenuItems = [
   },
   {
       title: 'Добавить сотрудника',
-      url: '/empoyees/newemployee',
+      url: '/employees/newemployee',
       cName: 'nav-links'
   },
   {
