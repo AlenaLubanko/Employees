@@ -35,3 +35,6 @@
 
 ### В работе использован react-router
 ![route](http://images.vfl.ru/ii/1604320591/ddef4a18/32159243.png)
+
+### Информация о сотрудниках хранится в MongoBD
+![db](http://images.vfl.ru/ii/1604321472/76f937ec/32159352.png)
