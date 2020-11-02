@@ -79,7 +79,7 @@ export function giveInfoForSortDateThunk(columnName, ascDate) {
       const result = await response.json()
       result.employeesFromBD.map((element) => {
         let birthDate = new Date(element.birthday)
-        element.birthday = ( '0' + birthDate.getDate()).slice(-2) + '.' + (birthDate.getMonth() + 1) + '.' + birthDate.getFullYear()
+        element.birthday = ( '0' + birthDate.getDate()).slice(-2) + '.' + ('0' + (birthDate.getMonth() + 1)).slice(-2) + '.' + birthDate.getFullYear()
         return element
       })
       dispatch(getEmployee(result.employeesFromBD))
@@ -102,7 +102,7 @@ export function giveInfoForFilterThunk(columnName, ascDate) {
       const result = await response.json()
       result.employeesFromBD.map((element) => {
         let birthDate = new Date(element.birthday)
-        element.birthday = ( '0' + birthDate.getDate()).slice(-2) + '.' + (birthDate.getMonth() + 1) + '.' + birthDate.getFullYear()
+        element.birthday = ( '0' + birthDate.getDate()).slice(-2) + '.' + ('0' + (birthDate.getMonth() + 1)).slice(-2) + '.' + birthDate.getFullYear()
         return element
       })
       dispatch(getEmployee(result.employeesFromBD))
